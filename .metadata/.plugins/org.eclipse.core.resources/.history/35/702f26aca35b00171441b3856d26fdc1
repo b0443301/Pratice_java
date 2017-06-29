@@ -1,0 +1,9 @@
+
+public class main {
+	public class Student {
+	String id="";
+	String Sname="";
+	int ChineseScore=0;
+	
+	}
+}

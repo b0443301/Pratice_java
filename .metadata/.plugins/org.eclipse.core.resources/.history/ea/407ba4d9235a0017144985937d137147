@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class main {
+	public static void main(String args[]) {
+		Scanner scanner = new Scanner(System.in);
+		while (scanner.hasNextLine()) {
+			int count = 0;
+			String symbol = scanner.nextLine();
+			if (symbol.equals(symbol)) {
+				count++;
+			}
+		}
+	}
+}

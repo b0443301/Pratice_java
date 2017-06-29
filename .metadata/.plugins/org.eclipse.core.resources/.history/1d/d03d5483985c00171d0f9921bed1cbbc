@@ -1,0 +1,29 @@
+
+public class main {
+	static class Operation {
+		int num1;
+		int num2;
+		int array[] = new int[6];
+
+		void operation() {
+
+		}
+
+		void arrayOutBound() {
+
+		}
+	}
+
+	public static void main(String args[]) {
+		try {
+			int array[] = new int[6];
+			for (int i = 0; i < 6; i++) {
+				array[i]=
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+}

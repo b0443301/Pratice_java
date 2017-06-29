@@ -1,0 +1,33 @@
+
+public class main {
+	static class Product {
+		String id = "";
+		String PName = "";
+		int Price = 0;
+
+		void SetData(String id, String PName, int Price) throws ProductException {
+			if (Price < 0) {
+				throw new ProductException();
+			}
+			
+			this.id = id;
+			this.PName = PName;
+			this.Price = Price;
+			
+		}
+	}
+
+	static class ProductException extends Exception {
+	}
+
+	public static void main(String args[]) throws ProductException {
+		Product product = new Product();
+		try {
+			product.SetData("456", "456", -1);
+		} catch (ProductException e) {
+			e.printStackTrace();
+			System.out.println("©ß¥X¨Ò¥~");
+		}
+
+	}
+}

@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class main {
+	public static void main(String args[]) {
+		Scanner scanner=new Scanner(System.in);
+		int input=scanner.nextInt();
+		Boolean isPrime = false;
+	for(int i=1;i<1000;i++){
+		input%=i;
+		isPrime = true;
+	}
+	if(!isPrime){
+		System.out.println("是質數");
+	}else{
+		System.out.println("不是質數");
+	}
+	
+	}
+}

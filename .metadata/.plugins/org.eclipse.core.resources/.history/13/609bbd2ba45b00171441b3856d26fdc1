@@ -1,0 +1,28 @@
+
+public class main {
+	public class Student {
+		String id = "";
+		String Sname = "";
+		int ChineseScore = 0;
+		int EnglishScore = 0;
+		int BccScore = 0;
+
+		void GetAvg() {
+
+		}
+
+		int Num() {
+			return 0;
+
+		}
+
+		void StudentNum9() {
+
+		}
+
+	}
+
+	public static void main(String args[]) {
+
+	}
+}

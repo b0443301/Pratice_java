@@ -1,0 +1,46 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class main {
+	public static int ArraySearch1(int arraySearch1[]) {
+		int search =  arraySearch1[0];
+		for(int i = 0; i < arraySearch1.length; i++) 
+	       System.out.print(arraySearch1[i] + " "); 
+		return search;
+	}
+	
+	public static int ArraySearch2(int arraySearch2[]) {
+		int search =  arraySearch2[0];
+		for(int i = 0; i < arraySearch2.length; i++) 
+	        System.out.print(arraySearch2[i] + " "); 
+		return search;
+	}
+	 
+}
+public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    int[] arraySearch = {93, 5, 3, 55, 57, 7, 2 ,73, 41, 91};
+
+    System.out.print("排序前: "); 
+    
+    System.out.println(); 
+    Arrays.sort(arraySearch);
+	
+   
+
+    System.out.print("排序後: "); 
+    
+
+    System.out.print("\n請輸入搜尋值: "); 
+   
+	int key = scanner.nextInt();
+    int find = -1;
+    if((find = Arrays.binarySearch(arraySearch, key)) > -1) {
+        System.out.println("找到值於索引 " + 
+                                   find + " 位置"); 
+    }
+    else 
+        System.out.println("找不到指定值"); 
+
+}

@@ -1,0 +1,11 @@
+
+public class main {
+	public static void main(String args[]) {
+		int id=0;
+		String name="";
+		int score=0;
+		System.out.println(arg0);
+	
+	
+	}
+}

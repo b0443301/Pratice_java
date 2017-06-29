@@ -1,0 +1,23 @@
+
+public class main {
+	public static void main(String args[]) {
+		int[][] pervoteobtain = new int[4][3];
+		int sum[] = new int[4];
+		int ans[] = new int[4];
+		for (int i = 0; i < 4; i++) {
+			for (int j = 0; j < 3; j++) {
+				sum[i] += sum[i];
+				ans[i] = sum[i] / 4;
+
+			}
+		}
+
+		for (int k = 0; k < 4; k++) {
+			for (int m = 0; m < 3; m++) {
+				System.out.println("得票數" + sum[k] + "得票率" + ans[m] + " ");
+			}
+
+		}
+
+	}
+}

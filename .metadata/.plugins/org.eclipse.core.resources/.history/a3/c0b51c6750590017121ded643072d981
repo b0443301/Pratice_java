@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+//public enum main{
+//	
+//}
+public enum Carry {
+    SUNDAY(4),
+    MONDAY(5),
+    SATURDAY(11);
+ 
+    private int value;
+ 
+    private Day(int value) {
+        this.value = value;
+    }
+ 
+    public int getValue() {
+        return this.value;
+    }
+}
+
+
+	public enum carry{
+	   int Binary,
+		int Octal,
+		int Hex,
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		
+
+	}
+

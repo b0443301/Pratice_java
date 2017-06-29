@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class Student {
+	public String id;
+	public String name;
+	public String score;
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setScore(String score) {
+		this.score = score;
+	}
+
+	public String getScore() {
+		return score;
+	}
+
+	public static void main(String args[]) {
+		Scanner scanner = new Scanner(System.in);
+		String id;
+		String name;
+		String score;
+		while(scanner.hasNextLine()){
+		id = scanner.nextLine();
+		name = scanner.nextLine();
+		score = scanner.nextLine();
+
+		System.out.println("請輸入學生姓名"+name);
+		System.out.println("請輸入學生學號"+id);
+		System.out.println("請輸入學生分數"+score);
+		}
+	}
+
+}

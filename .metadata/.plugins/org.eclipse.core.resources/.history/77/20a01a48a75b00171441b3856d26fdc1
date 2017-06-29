@@ -1,0 +1,68 @@
+import java.util.Scanner;
+
+public class main {
+	public class Student {
+		String id = "";
+		String Sname = "";
+		int ChineseScore = 0;
+		//for(int )
+		int EnglishScore = 0;
+		int BccScore = 0;
+
+		void GetAvg() {
+
+		}
+
+		int Num() {
+			return 0;
+
+		}
+
+		void StudentNum9() {
+
+		}
+
+	}
+
+	public static void main(String args[]) {
+		
+		
+		
+		
+		
+		
+		Scanner scanner = new Scanner(System.in);
+		int Numpeole = scanner.nextInt();
+		Student[] student = new Student[Numpeole];
+		for (int i = 0; i < Numpeole; i++) {
+			//student[i] = new Student();
+			System.out.println("請輸入學生學號");
+			student[i].id = scanner.nextLine();
+			System.out.println("請輸入學生姓名");
+			student[i].Sname= scanner.nextLine();
+			System.out.println("請輸入學生國文成績");
+			student[i].ChineseScore = scanner.nextInt();
+			System.out.println("請輸入學生英文成績");
+			student[i].EnglishScore = scanner.nextInt();
+			System.out.println("請輸入學生計概成績");
+			student[i].BccScore = scanner.nextInt();
+		}
+		String searchName = scanner.nextLine();
+		Boolean isFind = false;
+		
+		for (int i = 0; i < Numpeole; i++) {
+			
+			if (searchName.equals(student[i].Sname)) {
+				System.out.println("第" + i + "學生資料"+student[i]);
+				isFind = true;
+				
+			}
+		}
+		if (!isFind) {
+			System.out.println("沒找到學生資料");
+		}
+		
+	}
+		
+	}
+

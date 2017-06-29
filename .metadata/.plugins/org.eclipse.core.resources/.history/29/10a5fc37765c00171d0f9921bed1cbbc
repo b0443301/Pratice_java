@@ -1,0 +1,15 @@
+
+public class main {
+	public class Product {
+		String id="";
+		String PName="";
+		int Price=0;
+		void SetData(){
+			
+		}
+		
+		
+		
+	}
+
+}

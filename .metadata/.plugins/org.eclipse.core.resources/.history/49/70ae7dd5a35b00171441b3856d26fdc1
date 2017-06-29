@@ -1,0 +1,11 @@
+
+public class main {
+	public class Student {
+		String id = "";
+		String Sname = "";
+		int ChineseScore = 0;
+		int EnglishScore = 0;
+		int BccScore = 0;
+
+	}
+}

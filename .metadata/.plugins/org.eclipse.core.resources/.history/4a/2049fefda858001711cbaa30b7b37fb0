@@ -1,0 +1,9 @@
+
+public class main {
+	public static void main(String args[]) {
+		System.out.println("VCD     "+"單價       "+"數量 ");
+		System.out.println("=========================");
+		System.out.println("哈利波特   "+"");
+
+	}
+}

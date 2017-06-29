@@ -1,0 +1,16 @@
+public class Employee {
+	// int Salary;
+	String Ename;
+
+	static void Salary(int Salary) {
+		int MaxSalary = 40000;
+		int MinSalary = 20000;
+	}
+
+}
+
+public class main {
+	public static void main(String[] args) {
+
+	}
+}

@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class main {
+	public static void main(String args[]) {
+		Scanner scanner = new Scanner(System.in);
+
+		String input = scanner.nextLine();
+		char output = "";
+		System.out.println("請輸入一個符號" + input);
+		int count = scanner.nextInt();
+		System.out.println("請輸入要重複的次數" + count);
+
+		for (int i = 0; i < count; i++) {
+
+			System.out.println("結果" + input.charAt(i));
+		}
+
+		System.out.println("請問要不要繼續(Y/N)" + scanner.nextLine());
+	}
+
+}

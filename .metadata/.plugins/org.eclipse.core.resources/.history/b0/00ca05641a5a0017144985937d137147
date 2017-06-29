@@ -1,0 +1,10 @@
+
+public class main {
+	public static void main(String args[]) {
+		Scanner scanner=
+	switch(int){
+	case 3:
+		System.out.println(x);
+	}
+	}
+}

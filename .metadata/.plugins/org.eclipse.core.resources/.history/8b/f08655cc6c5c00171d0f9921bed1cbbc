@@ -1,0 +1,12 @@
+
+public class main {
+	public class Product {
+		String id="";
+		String PName="";
+		
+		
+		
+		
+	}
+
+}

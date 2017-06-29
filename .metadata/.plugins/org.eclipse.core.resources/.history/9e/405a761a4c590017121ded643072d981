@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class main {
+    Day day;
+
+    public main(Day day) {
+        this.day = day;
+    }
+
+    public void tellItLikeItIs() {
+        switch (day) {
+            case MONDAY:
+                System.out.println("Mondays are bad.");
+                break;
+
+            case FRIDAY:
+                System.out.println("Fridays are better.");
+                break;
+
+            case SATURDAY: case SUNDAY:
+                System.out.println("Weekends are best.");
+                break;
+
+            default:
+                System.out.println("Midweek days are so-so.");
+                break;
+        }
+    }
+
+    public static void main(String[] args) {
+        main firstDay = new main(Day.MONDAY);
+        firstDay.tellItLikeItIs();
+        main thirdDay = new main(Day.WEDNESDAY);
+        thirdDay.tellItLikeItIs();
+        main fifthDay = new main(Day.FRIDAY);
+        fifthDay.tellItLikeItIs();
+        main sixthDay = new main(Day.SATURDAY);
+        sixthDay.tellItLikeItIs();
+        main seventhDay = new main(Day.SUNDAY);
+        seventhDay.tellItLikeItIs();
+    }
+}

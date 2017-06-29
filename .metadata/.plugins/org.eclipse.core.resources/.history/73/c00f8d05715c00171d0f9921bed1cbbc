@@ -1,0 +1,36 @@
+import java.io.DataOutputStream;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+
+public class main {
+	public static void main(String args[]) {
+		// while(true){
+
+		try {
+			int[] random = new int[6];
+			for (int i = 0; i < 6; i++) {
+				random[i] = (int) (Math.random() * 49 + 1);
+			}
+			for (int i = 0; i < 6; i++) {
+				System.out.println(random[i]);
+			}
+
+			String file3 = "C:\\Users\\user\\Desktop\\file3.txt";
+			FileWriter fw = new FileWriter(file3);
+			for (int i = 0; i < 6; i++) {
+				fw.write(String.valueOf(random[i]));
+			}
+			fw.flush();
+			fw.close();
+
+			// int c;
+			// while ((c = in0.read()) != -1) {// 把他new出一個副本對它做是
+			// out.write(c);
+			// }
+			// out.close();
+			System.out.println("輸出成功");
+		} catch (Exception ex) {
+			System.out.println("輸出失敗");
+		}
+	}
+}

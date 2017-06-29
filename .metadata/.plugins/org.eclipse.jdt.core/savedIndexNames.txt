@@ -1,0 +1,26 @@
+INDEX VERSION 1.130+C:\Users\user\Documents\GitHub\Pratice_java\.metadata\.plugins\org.eclipse.jdt.core
+3057230526.index
+2357586313.index
+2471689570.index
+1599735691.index
+905852059.index
+677197597.index
+3264036658.index
+3327350321.index
+361543731.index
+791737092.index
+3830828532.index
+1307551845.index
+3812100589.index
+4115910400.index
+2347249040.index
+737057287.index
+4243528966.index
+2109628112.index
+1480049554.index
+1535405704.index
+1817878202.index
+2050054231.index
+221669569.index
+2186608534.index
+3242103336.index

@@ -1,0 +1,25 @@
+
+public class main {
+	
+		
+	public static void main(String args[]) {
+		try {
+			int num1=5;
+			int num2=0;
+			int ans=num1/num2;
+			
+//			if(ans!=num1+num2){
+//				
+//				throw new ArithmeticException();
+//			}
+			
+
+		} catch (ArithmeticException e) {
+			e.printStackTrace();
+			System.out.println();
+			System.out.println("¨Ò¥~³B²z");
+			
+		}
+
+	}
+}

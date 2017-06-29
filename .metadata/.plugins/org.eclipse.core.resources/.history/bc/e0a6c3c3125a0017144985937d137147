@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Student {
+	public class Data {
+		String id;
+		String name;
+		int score;
+
+	}
+
+	public static void main(String args[]) {
+		Scanner scanner = new Scanner(System.in);
+		String id;
+		String name;
+		String score;
+
+		id = scanner.nextLine();
+		name = scanner.nextLine();
+		score = scanner.nextLine();
+
+		System.out.println("請輸入學生Peter姓名" + name);
+		System.out.println("請輸入學生Peter學號" + id);
+		System.out.println("請輸入學生Peter分數" + score);
+		
+		System.out.println("請輸入學生Mary姓名" + name);
+		System.out.println("請輸入學生Mary學號" + id);
+		System.out.println("請輸入學生Mary分數" + score);
+		
+		System.out.println("Peter的姓名" + name);
+		System.out.println("Peter的學號" + id);
+		System.out.println("Peter的分數" + score);
+
+	}
+
+}

@@ -1,0 +1,59 @@
+import java.util.Scanner;
+
+enum Carry {
+	Binary, Octal, Hex, 
+   
+} 
+
+class EnumDemo {
+	Carry carry;
+    
+   public EnumDemo(Carry carry) {
+       this.carry = carry;
+   }
+    
+  public void monkeydoing() {
+        switch (carry) {
+          case Binary:
+               System.out.println("星期七，猴子刷油漆");
+              break;
+               
+           case Octal:
+                System.out.println("星期一，猴子穿新衣");
+                break;
+                
+           case Hex:
+                System.out.println("星期二，猴子肚子餓");
+                break;
+
+      }
+    }
+   
+    public static void main(String[] args) {
+        EnumDemo day1 = new EnumDemo(Day.MONDAY);
+       day1.monkeydoing();
+       EnumDemo day2 = new EnumDemo(Day.TUESDAY);
+       day2.monkeydoing();
+       EnumDemo day3 = new EnumDemo(Day.WEDNESDAY);
+        day3.monkeydoing();
+        
+}
+}
+
+
+
+
+//public enum Carry {
+//	Binary(2), Octal(8), Hex(16);
+//
+//	public int value;
+//
+//	private Carry(int value) {
+//		this.value = value;
+//	}	public int getValue() {
+//		return this.value;
+//	}
+//	for(Carry carry: Carry.values()) {
+//        System.out.println("name:" + carry.name() + "\nvalue:" + carry.getValue());
+//    }
+//}

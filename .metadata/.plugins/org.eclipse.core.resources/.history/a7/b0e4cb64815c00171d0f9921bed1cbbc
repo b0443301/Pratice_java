@@ -1,0 +1,29 @@
+public class main {
+	class Product {
+		String id = "";
+		String PName = "";
+		int Price = 0;
+
+		void SetData(String a, String b, int c) {
+				id=a;
+				PName=b;
+				Price=c;
+	}
+	}
+
+	public class ProductException extends Exception {
+		public ProductException() {
+
+		}
+
+		public ProductException(int Price) throws ProductException {
+			if (Price < 0)
+				throw new ProductException(-1);
+		}
+
+	}
+
+	public static void main(String args[]) {
+
+	}
+}

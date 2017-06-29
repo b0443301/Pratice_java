@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+class Employee {
+	public static int Salary;
+	public static String Ename;
+	static int MaxSalary = 40000;
+	static int MinSalary = 20000;
+	static Employee emplo = new Employee();
+
+	// static void Salary(int Max, int Min) {
+	// Employee.MaxSalary = 40000;
+	// Employee.MinSalary = 20000;
+	//
+	// }
+
+	// static void Ename(String Ename) {
+	// Employee.Ename(null);
+	//
+	// }
+
+	static void PrintData(int Salary, String Ename) {
+		System.out.println("員工薪水" + Salary);
+		System.out.println("員工姓名" + Ename);
+	}
+
+	static void ShowError(int Salary) {
+		if (Salary > MinSalary && Salary < MaxSalary) {
+			System.out.println("正確範圍");
+		} else {
+			System.out.println("錯誤金額");
+		}
+	}
+
+	public static void main(String[] args) {
+		emplo.Salary = Salary;
+		emplo.Ename = Ename;
+		Scanner scanner = new Scanner(System.in);
+		int employeenumber = scanner.nextInt();
+	}
+
+}

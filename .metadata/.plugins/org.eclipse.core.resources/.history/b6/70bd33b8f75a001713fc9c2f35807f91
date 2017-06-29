@@ -1,0 +1,36 @@
+ class Employee {
+	int Salary;
+	String Ename;
+	static int MaxSalary = 40000;
+	static int MinSalary = 20000;
+
+	static void EmployeeSalary(int Max,int Min) {
+		Employee emplo=new Employee();
+		
+	}
+	static void  Ename(String Ename) {
+		String Ename1="";
+		
+	}
+
+	static void PrintData(int Salary,String Ename) {
+		System.out.println("員工薪水"+Salary);
+		System.out.println("員工姓名"+Ename);
+	}
+
+	static void ShowError(int Salary) {
+		if(Salary>MinSalary &&Salary<MaxSalary){
+			System.out.println("正確範圍");
+		}else {
+			System.out.println("錯誤金額");
+		}
+	}
+
+
+}
+
+public class main {
+	public static void main(String[] args) {
+		Employee.
+	}
+}

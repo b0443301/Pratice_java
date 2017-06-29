@@ -1,0 +1,27 @@
+public class main {
+	public static int GetMax(int num1, int num2) {
+		int max;
+		if (num1 > num2)
+			max = num1;
+		else
+			max = num2;
+		return max;
+
+	}
+
+	public void GetMax(int num1, int num2, int num3) {
+		System.out.println("未設定列印文字");
+	}
+
+	public void GetMax(int arrayMax[]) {
+		System.out.println("未設定列印文字");
+	}
+
+	public static void main(String args[]) {
+		int a = 5;
+		int b = 10;
+		int c = GetMax(a, b);
+		System.out.println(c);
+
+	}
+}

@@ -1,0 +1,25 @@
+import java.util.Collections;
+import java.util.Scanner;
+
+public class main {
+	public static void main(String args[]) {
+		Scanner scanner=new Scanner(System.in);
+		int input[]=new int[5];
+		int max = input[0]; 
+		int min = input[0];
+		
+		for(int i=1;i<input.length;i++){
+		 input[i]=scanner.nextInt();
+			if(input[i]>max) 
+				max=input[i];
+		      if(input[i]<min) 
+			min=input[i];
+		
+		 
+		System.out.println("最大值 "+max);
+		System.out.println("最小值 "+min);
+		} 
+		
+	}
+	
+}

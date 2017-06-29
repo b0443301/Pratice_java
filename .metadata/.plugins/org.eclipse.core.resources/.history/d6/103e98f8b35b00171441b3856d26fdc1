@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class main {
+	public class Student {
+		String id = "";
+		String Sname = "";
+		int ChineseScore = 0;
+		// for(int )
+		int EnglishScore = 0;
+		int BccScore = 0;
+
+		void GetAvg(int a) {
+			int Avg = (ChineseScore + EnglishScore + BccScore) / 3;
+		}
+
+	}
+
+	public static void main(String args[]) {
+
+		System.out.println("請輸入學生學號");
+
+	}
+}

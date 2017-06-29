@@ -1,0 +1,15 @@
+public class main {
+	public static void main(String args[]){
+
+			String id="";
+			String PName="";
+			int Price=0;
+			void SetData(){
+				
+			}
+			
+			
+			
+	}
+
+}

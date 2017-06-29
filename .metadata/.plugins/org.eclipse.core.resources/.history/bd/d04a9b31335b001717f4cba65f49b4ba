@@ -1,0 +1,19 @@
+
+public class main {
+
+	class Employee{
+		int Salary=0;
+		String Ename="";
+		void PrintData(){
+			System.out.println(Salary);
+			System.out.println(Ename);
+		}
+		void ShowData(){
+			
+		}
+		
+		
+	}
+	
+	
+}
