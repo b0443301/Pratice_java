@@ -1,0 +1,85 @@
+import java.util.Scanner;
+
+public class main {
+	void change() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("您只能輸入100紙鈔、輸入500紙鈔、輸入1000紙鈔");
+
+		int input = scanner.nextInt();
+		int inputChange = scanner.nextInt();
+		int inputcount = scanner.nextInt();
+		if (input == 100 || input == 500 || input == 1000) {
+			System.out.println("您想換的面額及個數");
+			while (true) {
+				if (input == 100) {
+					if (inputChange == 50) {
+						input -= inputChange;
+						inputcount--;
+						continue;
+					}
+					if (inputChange == 10) {
+						input -= inputChange;
+						inputcount--;
+						continue;
+					}
+					if (inputChange == 5) {
+						input -= inputChange;
+						inputcount--;
+						continue;
+					}
+					if (inputChange == 1) {
+						input -= inputChange;
+						inputcount--;
+						continue;
+					}if (input == 500) {
+						if (inputChange == 50) {
+							input -= inputChange;
+							inputcount--;
+							continue;
+						}
+						if (inputChange == 10) {
+							input -= inputChange;
+							inputcount--;
+							continue;
+						}
+						if (inputChange == 5) {
+							input -= inputChange;
+							inputcount--;
+							continue;
+						}
+						if (inputChange == 1) {
+							input -= inputChange;
+							inputcount--;
+							continue;
+						}if (input == 1000) {
+							if (inputChange == 50) {
+								input -= inputChange;
+								inputcount--;
+								continue;
+							}
+							if (inputChange == 10) {
+								input -= inputChange;
+								inputcount--;
+								continue;
+							}
+							if (inputChange == 5) {
+								input -= inputChange;
+								inputcount--;
+								continue;
+							}
+							if (inputChange == 1) {
+								input -= inputChange;
+								inputcount--;
+								continue;
+							}
+				}
+				System.out.println(inputcount + "個" + input + "元");
+			}
+
+		}
+	}
+
+	public static void main(String args[]) {
+
+	}
+}

@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class main {
+	public static void main(String args[]) {
+
+		Scanner scanner = new Scanner(System.in);
+		String input = scanner.nextLine();
+		if (input.equals("M") || input.equals("m")) {
+			System.out.println("Monday");
+		} else if (input.equals("T") || input.equals("t")) {
+			System.out.println("Tuseday");
+		} else if (input.equals("W") || input.equals("w")) {
+			System.out.println("Wedesday");
+		} else if (input.equals("F") || input.equals("f")) {
+			System.out.println("Friday");
+		} else if (input.equals("S") || input.equals("s")) {
+			String inputSecond = scanner.nextLine();
+			if (inputSecond.equals("u")) {
+				System.out.println("Sunday");
+			} else {
+				System.out.println("Saturday");
+			}
+		}
+
+	}
+}

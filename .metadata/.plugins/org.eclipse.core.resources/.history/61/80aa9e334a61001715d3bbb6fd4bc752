@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class main {
+	public static void main(String args[]) {
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("請輸入身分證字號");
+		char addressArray[] = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q',
+				'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
+		char numbAddrArray[] = { '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+		String id = scanner.nextLine();// 用字串讀入
+		char inputArray[] = id.toCharArray();
+		if (inputArray[0] >= 'A' && inputArray[0] <= 'Z') {
+
+		}
+	}
+
+}

@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class main {
+	public static void main(String args[]) {
+		Scanner scanner = new Scanner(System.in);
+		int numbAddrArray[] = { 10, 11, 12, 13, 14, 15, 16, 17, 34, 18, 19, 20, 21, 22, 35, 23, 24, 25, 26, 27, 28, 29,
+				32, 30, 31, 33 };
+
+		System.out.println("請輸入身分證字號");
+		String id = scanner.nextLine();// 用字串讀入
+		char inputArray[] = id.toCharArray();
+
+		if ((inputArray[0] >= 'A' && inputArray[0] <= 'Z') && (inputArray[1] == 1 || inputArray[1] == 2)
+				&& inputArray.length == 10) {
+			int temp = numbAddrArray[inputArray[0] - 'A'];
+			int tenDigits = temp / 10;
+			int digits = temp % 10;
+			int sum = tenDigits + digits * 9;
+
+			int temp2 = 0;
+			for (int i = 8, j = 1; i >= 1 && j <= 8; i--, j++) {
+				temp2 += (inputArray[j] - '0') * i;
+			}
+			temp2 += inputArray[9] - '0';
+
+			if ((temp2 + sum) % 10 == 0) {
+				System.out.println("true!!");
+			} 
+		}else {
+			System.out.println("false!!");
+		}
+	}
+}

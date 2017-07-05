@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class main {
+	public static void main(String args[]) {
+		Scanner scanner = new Scanner(System.in);
+		String chinese = "壹貳参肆伍陸柒捌玖拾";
+
+		System.out.println("請輸入數字");
+		String input = scanner.nextLine();
+
+		String temp = new String();
+		String ans = new String();
+		for (int i = input.length() - 1; i >= 0; i--) {
+
+			temp += String.valueOf(chinese.charAt(input.charAt(i) - '0' - 1));
+			ans = temp + ans;
+			if (i == input.length() - 1) {
+				temp += "元";
+			} else if (i == input.length() - 2) {
+				temp += "拾";
+			} else if (i == input.length() - 3) {
+				temp += "佰";
+			} else if (i == input.length() - 4) {
+				temp += "仟";
+			} else if (i == input.length() - 5) {
+				temp += "萬";
+			} else if (i == input.length() - 6) {
+				temp += "拾";
+			} else if (i == input.length() - 7) {
+				temp += "佰";
+			}
+
+		}
+		System.out.println(ans);
+	}
+}

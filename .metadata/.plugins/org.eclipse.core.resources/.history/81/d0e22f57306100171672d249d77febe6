@@ -1,0 +1,50 @@
+public class main {
+	public static void main(String args[]) {
+
+	}
+
+	static double power(double sum, double x, int count) {
+		if (count > 0) {
+			sum = x * sum;
+			System.out.println(sum + "\t" + x + "\t" + count);
+			count--;
+			power(sum, x, count);
+		}
+		return sum;
+	}
+
+	static int divide(int sum, int count) {
+		if (count > 0) {
+			sum = count * sum;
+			System.out.println(sum + "\t" + count);
+			count--;
+			divide(sum, count);
+		}
+		return sum;
+	}
+
+	static double count(int sum, int x, int count, double ans) {
+		if (count > 0) {
+			ans = power(1, 0.1, 10) / divide(1, 5);
+			System.out.println(sum + "\t" + count+ "\t" +sum);
+			count(sum, x, count, ans);
+		}
+		return ans;
+	}
+
+}
+
+// public class main {
+// public static void main(String args[]) {
+// //add(0, 1);
+// }
+
+// static void add(int num, int count) {
+// if (num < 10000) {
+// System.out.println(num + "\t" + count);
+// num = num + count;
+// count++;
+// add(num, count);
+// }
+// }
+// }

@@ -1,0 +1,45 @@
+public class main {
+	public static void main(String args[]) {
+		// power(1, 0.1, 10);
+		divide(1, 5);
+	}
+
+	static void power(double num, double x, int count) {
+		if (count > 0) {
+			num = x * num;
+			System.out.println(num + "\t" + x + "\t" + count);
+			count--;
+			power(num, x, count);
+		}
+	}
+
+	static void divide(int sum, int count) {
+		if (count > 0) {
+			int temp = 1;
+
+			sum++;
+			//temp++;
+			int ans = (sum + 1) * temp;
+
+			System.out.println(ans + "\t" + temp + "\t" + sum + "\t" + count);
+			count--;
+			divide(sum, count);
+		}
+	}
+
+}
+
+// public class main {
+// public static void main(String args[]) {
+// //add(0, 1);
+// }
+
+// static void add(int num, int count) {
+// if (num < 10000) {
+// System.out.println(num + "\t" + count);
+// num = num + count;
+// count++;
+// add(num, count);
+// }
+// }
+// }

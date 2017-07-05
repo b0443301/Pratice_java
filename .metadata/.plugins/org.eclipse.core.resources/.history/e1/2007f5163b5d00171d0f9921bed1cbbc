@@ -1,0 +1,16 @@
+
+public class main {
+	public static void main(String args[]) {
+		int input=1;
+		
+		while(input<20){
+			int sum=0;
+			if(input%2==0){
+				sum=(int) Math.pow(input, 2);
+			}
+			input++;
+			System.out.println(sum);
+		}
+		
+	}
+}

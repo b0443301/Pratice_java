@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class main {
+	public static void main(String args[]) {
+		Scanner scanner = new Scanner(System.in);
+		char array[] = { 'a', 'b', 'c', 'd', 'e', 'f', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
+				'u', 'v', 'w', 'x', 'y', 'z' };
+
+		System.out.println("請輸入要排的英文字母");
+		for (int i = 0; i < array.length; i++) {
+			char[] input = scanner.nextByte();
+
+			if (array[i] > input[i]) {
+				char temp = array[i];
+				array[i] = input[i];
+				input[i] = temp;
+
+			}
+		}
+	}
+}

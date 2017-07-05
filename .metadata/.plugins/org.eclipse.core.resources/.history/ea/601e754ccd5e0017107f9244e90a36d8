@@ -1,0 +1,13 @@
+
+public class main {
+	static class Tempurarture{
+		int fah=0;
+		int celsius=0;
+		int kay=0;
+	}
+	class 
+	public static void main(String args[]) {
+		
+	}
+
+}

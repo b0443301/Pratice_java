@@ -1,0 +1,54 @@
+public class main {
+	public static void main(String args[]) {
+		double ans = count(1, 0.1, 10, 0);
+		System.out.println("µª®×:" + ans);
+	}
+
+	static double power(double sum, double x, int count) {
+		if (count > 0) {
+			sum = x * sum;
+			// System.out.println(sum + "\t" + x + "\t" + count);
+			count--;
+			sum = power(sum, x, count);
+		}
+		return sum;
+	}
+
+	static int divide(int sum, int count) {
+		if (count > 0) {
+			sum = count * sum;
+			// System.out.println(sum + "\t" + count);
+			count--;
+			sum = divide(sum, count);
+		}
+		return sum;
+	}
+
+	static double count(int sum, double x, int count, double ans) {
+		if (count > 0) {
+			double temp1 = power(sum, x, count);
+			int temp2 = divide(sum, count);
+			ans += temp1 / temp2;
+			// System.out.println(ans + "\t" + count + "\t" + sum);
+			count--;
+			ans = count(sum, x, count, ans);
+		}
+		// System.out.println(ans);
+		return ans;// ¹s¶¥¼h¬°1
+	}
+}
+
+// public class main {
+// public static void main(String args[]) {
+// //add(0, 1);
+// }
+
+// static void add(int num, int count) {
+// if (num < 10000) {
+// System.out.println(num + "\t" + count);
+// num = num + count;
+// count++;
+// add(num, count);
+// }
+// }
+// }

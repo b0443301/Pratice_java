@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class main {
+	public static void main(String args[]) {
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("請輸入身分證字號");
+		//char addressArray[] = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q',
+				//'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
+		int numbAddrArray[] = { 10, 11, 12, 13, 14, 15, 16, 17, 34, 18, 19, 20, 21, 22, 35, 23, 24, 25, 26, 27, 28, 29,
+				32, 30, 31, 33 };
+		// int tenDigits=0;
+		// int digits=0;
+		String id = scanner.nextLine();// 用字串讀入
+		char inputArray[] = id.toCharArray();
+		if (inputArray[0] >= 'A' && inputArray[0] <= 'Z') {
+			int temp = numbAddrArray[inputArray[0] - 'A'];
+			int tenDigits = temp / 10;
+			int digits = temp % 10;
+			int sum = tenDigits + digits * 9;
+			int temp2 = 0;
+			for (int i = 8; i >= 1; i--) {
+				for (int j = 1; j < 8; j++) {
+					temp2 = inputArray[j] * i;
+					temp2 += temp2;
+					if (inputArray[8] != 0) {
+						temp2 += inputArray[8];
+					}
+				}
+			}
+			if ((temp2 + sum) / 10 != 0) {
+				System.out.println("correct!");
+			} else {
+				System.out.println("false!!");
+			}
+
+		}
+	}
+
+}

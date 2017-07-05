@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class main {
+	void change() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("您只能輸入100紙鈔、輸入500紙鈔、輸入1000紙鈔");
+
+		int input = scanner.nextInt();
+		int inputChange = scanner.nextInt();
+		int count = 0;
+		if (input == 100 || input == 500 || input == 1000) {
+			System.out.println("您想換的面額及個數");
+			if (input == 1) {
+
+			} else if (input == 5) {
+
+			} else if (input == 10) {
+
+			} else if (input == 50 && count >= 20) {
+
+			}
+
+		}
+	}
+
+	public static void main(String args[]) {
+
+	}
+}

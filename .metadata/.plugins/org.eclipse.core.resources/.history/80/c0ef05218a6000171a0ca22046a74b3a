@@ -1,0 +1,47 @@
+
+public class main {
+
+	int FahToCels(int input) {
+
+		int celsius = (input - 32) * (5 / 9);
+		return celsius;
+
+	}
+
+	int CelsToFah(int input) {
+		// µØ¤ó=Äá¤ó*9/5+32
+		int fah = input * (9 / 5) + 32;
+		return fah;
+	}
+
+	int CelsToKay(int input) {
+
+		int celsius = input - 273;
+		return celsius;
+	}
+
+	int KayToCels(int input) {
+		int kay = input + 273;
+		return kay;
+	}
+
+	int FahToKay(int input) {
+		int fah = (input - 273) * (9 / 5) + 32;
+		return fah;
+	}
+
+	int KayToFah(int input) {
+
+	}
+
+	public static void main(String args[]) {
+		int FahToCels(int input);
+		int CelsToFah(int input);
+		int CelsToKay(int input);
+		int KayToCels(int input);
+		int FahToKay(int input);
+		int KayToFah(int input);
+		System.out.println(z);
+		
+	}
+}

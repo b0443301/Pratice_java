@@ -1,0 +1,36 @@
+
+public class main {
+	static class Tempurarture {
+		int fah = 0;
+		int celsius = 0;
+		int kay = 0;
+
+		int Stedata1(int fah) {
+			this.fah=fah;
+			celsius =(fah * (9/ 5)) + 32;
+			return celsius;
+		}
+
+		int Stedata2(int celsius) {
+			this.celsius=celsius;
+			fah = celsius * (5 / 9) - 32;
+			return fah;
+		}
+
+		int Stedata3(int fah) {
+			this.fah=fah;
+			kay = fah + 273;
+			return kay;
+		}
+
+	}
+
+	public static void main(String args[]) {
+		
+		Tempurarture tempurarture = new Tempurarture();
+		System.out.println(tempurarture.Stedata1(40));
+		System.out.println(tempurarture.Stedata2(40));
+		System.out.println(tempurarture.Stedata3(40));
+	}
+
+}

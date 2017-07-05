@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class main {
+	class SemesterScore {
+		String name = "";
+		String id = "";
+		int middleScore = 0;
+		int midtermScore = 0;
+		int ususalScore = 0;
+		int semester = 0;
+
+	}
+
+	public static void main(String args[]) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("請輸入3筆學生資料");
+		// String semesterScore=new String();
+		SemesterScore semesterScore = new SemesterScore();
+		while (scanner.hasNextLine()) {
+			semesterScore.id = scanner.nextLine();
+			semesterScore.middleScore = scanner.nextLine();
+			semesterScore.midtermScore = scanner.nextLine();
+			semesterScore.name = scanner.nextLine();
+			semesterScore.ususalScore = scanner.nextLine();
+			// semesterScore.id=scanner.nextLine();
+
+		}
+		int semester = (int) ((semesterScore.middleScore * 0.3) + (semesterScore.midtermScore * 0.3)
+				+ (semesterScore.ususalScore * 0.4));
+		System.out.println("學生學期成績" + semesterScore.semester);
+
+	}
+}

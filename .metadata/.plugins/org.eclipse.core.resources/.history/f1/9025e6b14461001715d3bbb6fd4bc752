@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class main {
+	public static void main(String args[]) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("請輸入身分證字號");
+		char addressArray[]=new char[26];
+		
+
+	}
+
+}

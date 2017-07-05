@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class main {
+	public static void main(String args[]) {
+		Scanner scanner = new Scanner(System.in);
+		// String inputNumber = new String();
+		String chinese = "壹貳参肆伍陸柒捌玖拾";
+		String unit = "元拾佰仟";
+
+		System.out.println("請輸入數字");
+		String input = scanner.nextLine();
+		//if (input.length() > 4) {
+			for (int i = input.length() - 1; i >= 0; i--) {
+				System.out.print(chinese.charAt(input.charAt(i)-'0')-1);
+				if (i == input.length() - 1) {
+					System.out.print("元");
+				} else if (i == input.length() - 2) {
+					System.out.print("拾");
+				} else if (i == input.length() - 3) {
+					System.out.print("佰");
+				} else if (i == input.length() - 4) {
+					System.out.print("仟");
+				} else if (i == input.length() - 5) {
+					System.out.print("萬");
+				}
+				else if (i == input.length() - 6) {
+					System.out.print("拾");
+				}
+				else if (i == input.length() - 7) {
+					System.out.print("佰");
+				}
+			}
+
+//		} else {
+//			for (int i = input.length() - 1; i >= 0; i--) {
+//				System.out.print(chinese.charAt(input.charAt(i) - '0' - 1));
+//				System.out.print(unit.charAt(input.length() - 1 - i));
+//				System.out.print(" ");
+//			}
+//		}
+	}
+
+	// String inputChinese = new String();
+
+	// for (int i = 0; i < inputnumber.length(); i++) {
+	// inputnumber = scanner.nextLine();
+	// if(inputnumber==)
+	//
+	// }
+
+}

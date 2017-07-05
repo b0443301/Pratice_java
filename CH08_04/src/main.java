@@ -16,6 +16,7 @@ public class main {
 		}
 	}
 
+	
 	static class ProductException extends Exception {
 		public String toString() {
 			return "ProductException";

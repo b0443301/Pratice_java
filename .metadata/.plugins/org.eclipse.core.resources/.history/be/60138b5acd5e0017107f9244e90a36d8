@@ -1,0 +1,23 @@
+
+public class main {
+	static class Tempurarture{
+		int fah=0;
+		int celsius=0;
+		int kay=0;
+	
+	void Stedata1(){
+		celsius=fah*(9/5)+32;
+	}
+	void Stedata2(){
+		celsius=fah*(9/5)+32;
+	}
+	void Stedata3(){
+		kay=fah+273;
+	}
+	
+	}
+	public static void main(String args[]) {
+		
+	}
+
+}

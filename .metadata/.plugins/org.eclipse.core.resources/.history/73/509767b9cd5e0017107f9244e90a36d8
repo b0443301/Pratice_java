@@ -1,0 +1,30 @@
+
+public class main {
+	static class Tempurarture {
+		int fah = 0;
+		int celsius = 0;
+		int kay = 0;
+
+		int Stedata1(int a) {
+			celsius = fah * (9 / 5) + 32;
+			return celsius;
+		}
+
+		int Stedata2(int a) {
+			fah = celsius * (5 / 9) + 32;
+			return fah;
+		}
+
+		int Stedata3(int a) {
+			kay = fah + 273;
+			return kay;
+		}
+
+	}
+
+	public static void main(String args[]) {
+		int num1=56;
+		int 
+	}
+
+}

@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class main {
+	public static void main(String args[]) {
+		Scanner scanner = new Scanner(System.in);
+		double money = 0;
+		double ans = 0;
+		while (scanner.hasNext()) {
+			int input = scanner.nextInt();
+			if (input <= 800) {
+				money = input * 0.5;
+				System.out.println(money);
+			} else if (input > 800 && input < 1500) {
+				money = input * 0.5;
+				ans = money * 0.95;
+				System.out.println(ans);
+			} else if (money >= 1500) {
+				money = input * 0.5;
+				ans = input * 0.8;
+				System.out.println(ans);
+			}
+		}
+		scanner.close();
+	}
+}

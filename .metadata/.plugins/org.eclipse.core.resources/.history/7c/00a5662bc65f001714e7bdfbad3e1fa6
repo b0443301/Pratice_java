@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class main {
+	void change() {
+		Scanner scanner = new Scanner(System.in);
+		int input = scanner.nextInt();
+
+	}
+
+	}
+
+	}
+
+	public static void main(String args[]) {
+
+	}
+}

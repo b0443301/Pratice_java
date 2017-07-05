@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class main {
+	void change() {
+		Scanner scanner = new Scanner(System.in);
+		int input = 0;
+		System.out.println("您只能輸入100紙鈔、輸入500紙鈔、輸入1000紙鈔");
+		input = scanner.nextInt();
+		if (input == 100 || input == 500 || input == 1000) {
+
+		}
+	}
+
+	// public static void main(String args[]) {
+	//
+	// }
+}

@@ -1,0 +1,13 @@
+
+public class main {
+	class change {
+		int[] input = { 100, 500, 1000 };
+		int[] output = { 1, 5, 10, 50 };
+		int count = 0;// ­Ó¼Æ
+
+	}
+
+	public static void main(String args[]) {
+
+	}
+}

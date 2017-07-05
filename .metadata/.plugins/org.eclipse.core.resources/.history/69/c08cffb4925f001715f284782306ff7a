@@ -1,0 +1,7 @@
+
+public class main {
+	public static void main(String args[]) {
+		int[] input={100,500,1000};
+		
+	}
+}

@@ -1,0 +1,19 @@
+
+public class main {
+	void GreComDiv(int a, int b) {
+		int num1 = 0;
+		int num2 = 0;
+		for (int i = 0; i < num1; i++) {
+			 if(num1%i==0 && num2%i==0)
+			System.out.println("num1和num2公因式"+i);
+		}
+	}
+
+	public static void main(String args[]) {
+		int num1 = 5;
+		int num2 = 10;
+		int  GreComDiv;
+		
+	}
+
+}

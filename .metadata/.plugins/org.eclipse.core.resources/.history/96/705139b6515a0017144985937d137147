@@ -1,9 +1,0 @@
-import java.util.Scanner;
-
-public class main {
-	public static void main(String args[]) {
-		int test[]=new int[10];
-		Scanner scanner=new Scanner(System.in);
-		
-	}
-}

@@ -1,0 +1,24 @@
+
+public class main {
+	public static void main(String args[]) {
+		int i = 1;
+		while (i <= 9) {
+        int j = 1;// ²MªÅ
+      //if(j>=3)System.out.print("\t"+"\n");
+			while (j <= 9) {
+				System.out.print(i + "*" + j + "=" + (i * j)+"\n");
+				//System.out.print("\n");
+				//if(i>=2)System.out.print();
+				j++;
+				} 
+			System.out.print("\n");
+			i++;
+			
+		
+			
+			
+			
+			}
+		System.out.print("\t");
+	}
+}

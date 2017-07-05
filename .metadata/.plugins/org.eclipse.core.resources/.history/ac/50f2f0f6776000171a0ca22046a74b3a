@@ -1,0 +1,28 @@
+
+public class main {
+
+	int FahToCels(int input) {
+
+		int celsius = input * (9 / 5) + 32;
+		return celsius;
+		// µØ¤ó=Äá¤ó*9/5+32
+	}
+
+	int CelsToFah(int input) {
+
+		int fah = input * (5 / 9) - 32;
+		return fah;
+	}
+
+	int CelsToKay(int input) {
+
+		int kay = input + 273;
+		return kay;
+	}
+
+	public static void main(String args[]) {
+
+		// System.out.println(tempurarture.Stedata2(40));
+		// System.out.println(tempurarture.Stedata3(40));
+	}
+}

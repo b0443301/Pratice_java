@@ -1,0 +1,28 @@
+
+public class main {
+	static void Prime() {
+		Boolean isPrime = false;
+		for (int i = 3; i < 100; i++) {
+			for (int j = 2; j < i; j++) {
+				if (i % j == 0) {
+					isPrime = false;
+					break;
+
+				} else {
+					
+					isPrime = true;
+					continue;
+				}
+			}
+			if (isPrime) {
+				System.out.println(i);
+			} else {
+				break;
+			}
+		}
+	}
+
+	public static void main(String args[]) {
+		Prime();
+	}
+}

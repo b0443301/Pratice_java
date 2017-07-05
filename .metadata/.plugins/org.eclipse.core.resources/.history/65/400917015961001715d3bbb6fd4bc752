@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class main {
+	class semesterScore {
+		String name = "";
+		String id = "";
+		int middleScore = 0;
+		int midtermScore = 0;
+		int ususalScore = 0;
+		int semester = (int) ((middleScore * 0.3) + (midtermScore * 0.3) + (ususalScore * 0.4));
+
+	}
+
+	public static void main(String args[]) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("請輸入學生資料");
+		while (scanner.hasNext()) {
+			semesterScore
+		}
+
+	}
+
+}

@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class main {
+	void change() {
+		Scanner scanner = new Scanner(System.in);
+		int input = 0;
+		if (input == 100 || input == 500 || input == 1000) {
+			input = scanner.nextInt();
+		}
+	}
+
+	// public static void main(String args[]) {
+	//
+	// }
+}

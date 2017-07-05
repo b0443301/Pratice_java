@@ -1,6 +1,0 @@
-
-public enum Carry {
-	Binary=2;
-	Octal=8;
-	Hex=16;
-}
