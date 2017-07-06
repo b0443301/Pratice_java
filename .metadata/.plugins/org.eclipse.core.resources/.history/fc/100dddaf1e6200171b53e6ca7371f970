@@ -1,0 +1,63 @@
+//
+//public class main {
+//	public static void main(String arg[]) {
+//		char array1[] = { 'a', 'b', 'c' };
+//		char array2[] = { 'x', 'y', 'z' };
+//		for (int i = 0; i < 3; i++) {
+//			for (int j = 0; j < 3; j++) {
+//				// 程式不可以一行做很多事,用if判斷&&時,要分開判斷
+//				if (array1[i] == 'a' && array2[j] == 'x') {
+//					continue;
+//				}
+//				if (array1[i] == 'c' && array2[j] == 'x') {
+//					continue;
+//				}
+//				if (array1[i] == 'c' && array2[j] == 'z') {
+//					continue;
+//				}
+//				System.out.print(array1[i]);
+//				// System.out.print("\n");
+//				System.out.print("\t");
+//				// print才可以印char,println也可以印char但不能相加+,
+//				// 一但相加就會變
+//				// 單純做char的話,不可以相加,不然會變成ascii碼相加
+//				System.out.print(array2[j]);
+//				System.out.print("\n");
+//			}
+//		}
+//
+//	}
+//}
+import java.util.ArrayList;
+
+public class main {      
+	String a,b,c;      
+	public static void main(String[] args) {      
+		String[] op = { "x", "y", "z" };      
+		ArrayList<pingpang> arrayList=new ArrayList<pingpang>();      
+		for (int i = 0; i < 3; i++)        
+			for (int j = 0; j < 3; j++)         
+				for (int k = 0; k < 3; k++) {         
+					pingpang a=new pingpang(op[i],op[j],op[k]);          
+					if(!a.a.equals(a.b)&&!a.b.equals(a.c)&&!a.a.equals("x")&&!a.c.equals("x")&&!a.c.equals("z")){           
+						arrayList.add(a);          
+						}         
+					}      
+		for(Object a:arrayList){      
+			System.out.println(a);      
+			}      
+		}      
+	public pingpang(String a, String b, String c) {
+		super();      
+		this.a = a;      
+		this.b = b;      
+		this.c = c;      
+		}     
+	@Override      
+	public String toString() {      
+		// TODO Auto-generated method stub      
+		return"a的對手是"+a+","+"b的對手是"+b+","+"c的對手是"+c+"\n";     
+		}
+}
+
+}

@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class main {
+	public static void main(String args[]) {
+		Scanner scanner = new Scanner(System.in);
+		int[] dateArray = { 31, 30, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+		System.out.println("請輸入月份");
+		int month = scanner.nextInt();
+		System.out.println("請輸入日期");
+		int date = scanner.nextInt();
+		for(int )
+		
+		
+	}
+}

@@ -1,0 +1,21 @@
+
+public class main {
+	public static void main(String arg[]) {
+		char array1[] = { 'a', 'b', 'c' };
+		char array2[] = { 'x', 'y', 'z' };
+		for (int i = 0; i < 3; i++) {
+			for (int j = 0; j < 3; j++) {
+				if (array1[i] != 'a' && array2[j] != 'x') {
+					if (array1[i] != 'c' && array1[j] != 'x' && array1[j] != 'z') {
+						System.out.print(array1[i]);
+						System.out.print(array1[j]);
+						System.out.print("\n");
+						System.out.print(array2[i]);
+						System.out.print(array2[j]);// print才可以印char,println不行印char
+					}
+				}
+			}
+		}
+
+	}
+}

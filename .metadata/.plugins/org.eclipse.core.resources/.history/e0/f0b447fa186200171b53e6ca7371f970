@@ -1,0 +1,25 @@
+
+public class main {
+	public static void main(String arg[]) {
+		char array1[] = { 'a', 'b', 'c' };
+		char array2[] = { 'x', 'y', 'z' };
+		for (int i = 0; i < 3; i++) {
+			for (int j = 0; j < 3; j++) {
+				if (array1[i] == 'a' && array2[j] == 'x') {
+					continue;
+				}
+				if (array1[i] != 'c' && array2[j] != 'x' && array2[j] != 'z') {
+					continue;
+				}
+				System.out.print(array1[i]);
+				//System.out.print("\n");
+				System.out.print("\t");
+				// print才可以印char,printl也可以印char但不能相加+,
+				// 一但相加就會變
+				
+				System.out.print(array2[j]);
+			}
+		}
+
+	}
+}

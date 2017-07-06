@@ -1,0 +1,20 @@
+
+public class main {
+	public static void main(String args[]) {
+		int num1 = 1, num2 = 2, num3 = 3;
+		for (int i = num1; i <= 3; i++) {
+			for (int j = num2; j <= 3; j++) {
+				if (i == j)
+					continue;
+				for(int k=num3;k<=3;k++){
+					if((k==i)||(k==j))
+						continue;
+					System.out.println(num1*100+num2*10+num3);
+					
+				}
+
+			}
+
+		}
+	}
+}
