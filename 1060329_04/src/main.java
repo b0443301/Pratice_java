@@ -40,7 +40,7 @@ public class main {
 		System.out.println(number + "個壹元");
 
 		// return 100;
-
+		scanner.close();
 		// System.out.println(inputcount + "個" + input + "元");
 	}
 

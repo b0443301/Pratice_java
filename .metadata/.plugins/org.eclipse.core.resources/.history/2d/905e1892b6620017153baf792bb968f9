@@ -1,0 +1,43 @@
+import java.awt.List;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class main {
+	private ArrayList route = new ArrayList();
+
+	public static void main(String args[]) {
+
+		System.out.print("½Ð¿é¤J½L¼Æ¡G");
+
+		main hanoi = new main();
+
+		int n = new Scanner(System.in).nextInt();
+
+		for (String move : hanoi.move(n, 'A', 'B', 'C'))
+
+			System.out.println(move);
+
+	}
+
+	@SuppressWarnings({ "rawtypes", "unchecked" })
+	private ArrayList move(int n, char a, char b, char c) {
+
+		if (n == 1) {
+
+			route.add(a + " -> " + c);
+
+		} else {
+
+			move(n - 1, a, c, b);
+
+			move(1, a, b, c);
+
+			move(n - 1, b, a, c);
+
+		}
+
+		return route;
+
+	}
+
+}

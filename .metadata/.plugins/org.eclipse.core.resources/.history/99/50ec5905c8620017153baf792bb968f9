@@ -1,0 +1,32 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class main {
+	ArrayList<String> route = new ArrayList<String>();
+
+	public static void main(String args[]) {
+		System.out.print("½Ð¿é¤J½L¼Æ¡G");
+
+		main hanoi = new main();
+		Scanner scanner = new Scanner(System.in);
+		int n = scanner.nextInt();
+
+		for (String move : hanoi.move(n, 'A', 'B', 'C'))
+			System.out.println(move);
+		
+		scanner.close();
+	}
+
+	public ArrayList<String> move(int n, char from, char buffer, char to) {
+		if (n == 1) {
+			route.add(from + " -> " + to);
+		} else {
+			move(n - 1, from, to, buffer);
+
+			move(1, from, buffer, to);
+
+			move(n - 1, buffer, from, to);
+		}
+		return route;
+	}
+}

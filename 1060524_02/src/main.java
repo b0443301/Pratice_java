@@ -35,10 +35,10 @@ public class main {
 					System.out.println("女性");
 				}
 			} else {
-				System.out.println("false!!");
+				System.out.println("輸入格式錯誤!!再輸入一次吧");
 			}
 		} else {
-			System.out.println("false!!");
+			System.out.println("輸入格式錯誤!!再輸入一次吧");
 		}
 	}
 }

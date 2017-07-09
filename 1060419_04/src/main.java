@@ -4,6 +4,7 @@ public class main {
 		System.out.println("答案:" + ans + 1);// 零階層為1
 	}
 
+	// 計算次方,不用Math.pow(a,b)
 	static double power(double sum, double x, int count) {
 		if (count > 0) {
 			sum = x * sum;
@@ -14,11 +15,14 @@ public class main {
 		return sum;
 	}
 
+	// 相除帶入參數跟上面帶入參數位置相同
 	static int divide(int sum, int count) {
+		//從要做的數字開始減EX:9!--->1!
 		if (count > 0) {
 			sum = count * sum;
 			// System.out.println(sum + "\t" + count);
 			count--;
+			//呼叫自己(相當於for)
 			sum = divide(sum, count);
 		}
 		return sum;

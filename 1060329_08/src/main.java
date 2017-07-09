@@ -5,11 +5,11 @@ public class main {
 		int sum = 0;
 		while (input <= 20) {
 			if (input % 2 == 0) {
-				sum += (int) Math.pow(input, 2);
 				System.out.println("场案计" + input);
-			}
-			input++;
+				sum += (int) Math.pow(input, 2);
+				}
+			input++;//whileΩ计琌糶柑
 		}
-		System.out.println("场キよ㎝" + sum);
+		System.out.println("场キよ羆㎝" + sum);
 	}
 }

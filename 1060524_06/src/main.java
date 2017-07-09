@@ -6,6 +6,7 @@ public class main {
 		int[] dateArray = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 		System.out.println("請輸入年份");
 		int year = scanner.nextInt();
+		//判斷閏年
 		if (year % 4 == 0) {
 			if (year % 100 == 0) {
 				if (year % 400 == 0) {
@@ -40,5 +41,6 @@ public class main {
 				System.out.println("今年的第" + date + "天");
 			}
 		}
+		scanner.close();
 	}
 }

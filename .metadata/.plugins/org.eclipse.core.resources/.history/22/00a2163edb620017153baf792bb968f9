@@ -1,0 +1,59 @@
+import java.awt.List;
+import java.util.ArrayList;
+
+public class main {
+	public static void main(String args[]) {
+		int multiArray[] = new int[50];
+		int MultipliedArray[] = new int[100];
+		int temp[] = new int[100];
+		for (int i = 50; i >= 0; i--) {
+			for (int j = 50; j >= 0; j--) {
+				temp[i + j] = multiArray[i] * MultipliedArray[j];
+				temp[i + j] += temp[i + j];
+				if (temp[i + j] > 9) {
+					temp[i + j] = temp[i + j] / 10;
+					temp[i + j] = temp[i + j] % 10;
+				}
+			}
+		}
+		for (int i = 50; i >= 0; i--) {
+			for (int j = 50; j >= 0; j--) {
+				System.out.println(temp[i + j]);
+			}
+		}
+
+	}
+
+}
+
+// public static void main(String args[]) {
+// char sumArray[] = new char[100];
+// int sum=1;
+//
+// for (int i = 1; i < 50; i++) {//判斷進位
+// for (int j = 0; j <100; j++) {// for迴圈進位式自動做,所以加continue時會自動執行進位式
+// sum*= i;
+// if(sum>){
+// sumArray[i]=sum/10;
+// sumArray[i++]=sum%10;
+//
+//
+// }
+// }
+// }
+// for(int i=1;i<100;i++){
+// System.out.println(sumArray[i]);
+// }
+//
+
+// int i = 1;
+// long test = 1;
+// while (i <= 50)
+// {//while迴圈進位式不會自動做,所以加continue時會不會自動執行進位式,因為i++是自己加上去的,i永遠==1無限迴圈
+// test = test * i;
+// i++;
+// }
+
+// System.out.println(sum);
+// }
+// }

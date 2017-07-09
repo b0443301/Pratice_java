@@ -10,6 +10,7 @@ public class main {
 
 		String ans = new String();
 		for (int i = input.length() - 1; i >= 0; i--) {
+			// 取對應中文字的索引(數字-'0')(大寫-'A'||小寫-'a')
 			String temp = String.valueOf(chinese.charAt(input.charAt(i) - '0'));
 			if (!temp.equals("零")) {
 				if (i == input.length() - 1) {
@@ -27,11 +28,11 @@ public class main {
 				} else if (i == input.length() - 7) {
 					temp += "佰";
 				}
-				ans = temp + ans;
+				ans = temp + ans;//temp代表中間結果相加存下來
 			} else if (temp.equals("零")) {
 				if (i == input.length() - 1) {
 					temp += "元";
-					ans = temp + ans;
+					ans = temp + ans;// ans = ans +temp是不一樣的結果;
 				} else if (i == input.length() - 5) {
 					ans = "萬" + ans;
 				} else if (ans.charAt(0) != '零') {// ans.charAt(0)目前讀到的最前面的一位是不是零
@@ -40,5 +41,6 @@ public class main {
 			}
 		}
 		System.out.println(ans + "整");
+		scanner.close();
 	}
 }

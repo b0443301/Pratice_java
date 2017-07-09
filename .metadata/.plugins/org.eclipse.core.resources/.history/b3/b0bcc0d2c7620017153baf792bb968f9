@@ -1,0 +1,44 @@
+import java.awt.List;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class main {
+	@SuppressWarnings("rawtypes")
+	ArrayList route = new ArrayList();
+
+	public static void main(String args[]) {
+
+		System.out.print("請輸入盤數：");
+
+		main hanoi = new main();
+		Scanner scanner = new Scanner(System.in);
+		int n = scanner.nextInt();
+
+		for (Object move : hanoi.move(n, 'A', 'B', 'C'))
+
+			System.out.println(move);
+
+	}
+
+	@SuppressWarnings({ "rawtypes", "unchecked" })
+	private ArrayList move(int n, char from, char buffer, char to) {
+
+		if (n == 1) {
+
+			route.add(from + " -> " + to);
+
+		} else {
+
+			move(n - 1, from, to, buffer);// a,c,b是指3個柱子
+
+			move(1, from, buffer, to);
+
+			move(n - 1, buffer, from, to);
+
+		}
+
+		return route;
+
+	}
+
+}

@@ -1,0 +1,27 @@
+
+public class main {
+	public static void main(String args[]) {
+		for (int i = 1; i <= 9; i++) {
+			for (int j = 0; j <= 9; j++) {
+				if (i == j)
+					continue;
+				for (int k = 0; k <= 9; k++) {
+					if (k == j || k == i)
+						continue;
+					for (int m = 0; m <= 9; m++) {
+						if (m == j || m == i || m == k)
+							continue;
+						for (int n = 0; n <= 9; n++) {
+							if (n == j || n == i || n == k || n == m)
+								continue;
+							if ((i * 10000 + j * 1000 + k * 100 + m * 10 + n)
+									* 4 == (n * 10000 + m * 1000 + k * 100 + j * 10 + i)) {
+								System.out.println((i * 10000 + j * 1000 + k * 100 + m * 10 + n));
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

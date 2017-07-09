@@ -1,12 +1,15 @@
 public class main {
+	// input把计盿地ん
 	static int FahToCels(int input) {
 		int celsius = (input - 32) * 5 / 9;
 		return celsius;
 	}
 
+	// input把计盿尼ん
 	static int CelsToFah(int input) {
 		// 地ん=尼ん*9/5+32
 		int fah = input * 9 / 5 + 32;
+
 		return fah;
 	}
 
@@ -31,6 +34,7 @@ public class main {
 	}
 
 	public static void main(String args[]) {
+		// 紆┦糶猭(ゑ耕)рinput┰ㄓ,矪璶э场常э
 		int input = -40;
 		System.out.println("地ん锣尼ん  " + FahToCels(input));
 		System.out.println("尼ん锣地ん  " + CelsToFah(input));

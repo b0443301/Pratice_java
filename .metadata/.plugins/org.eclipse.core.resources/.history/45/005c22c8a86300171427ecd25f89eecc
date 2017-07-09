@@ -1,0 +1,19 @@
+
+public class main {
+	public static void main(String args[]) {
+		//材计1~3
+		for (int i = 1; i <= 3; i++) {
+			//材计1~3
+			for (int j = 1; j <= 3; j++) {
+				//材计==材计
+				if (i == j)
+					continue;
+				for (int k = 1; k <= 3; k++) {
+					if ((k == i) || (k == j))
+						continue;
+					System.out.println(i * 100 + j * 10 + k);
+				}
+			}
+		}
+	}
+}

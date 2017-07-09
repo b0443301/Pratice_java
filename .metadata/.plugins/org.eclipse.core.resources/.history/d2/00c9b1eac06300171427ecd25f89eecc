@@ -1,0 +1,95 @@
+import java.awt.List;
+import java.util.ArrayList;
+
+public class main {
+	public static void main(String args[]) {
+		// 開空間 //計算50!
+		final char MAX = 255, COUNT = 50;
+		// 被乘數
+		char[] number = new char[MAX];
+		number[0] = 1;
+
+		for (int i = 1; i <= COUNT; i++) {
+			// 相乘i是個位數時,不需要拆解成2位數做判斷
+			// 直接相乘
+			if (i <= 9) {
+				for (int k = 0; k < MAX; k++)
+					number[k] *= i;
+				// 如果是十位數的時候,要減1是因為MAX是極端值255時
+				for (int k = 0; k < MAX - 1; k++) {
+					if (number[k] >= 10) {
+						// 下面k+1防止溢位,取商數來放在前一位(進位)
+						number[k + 1] += number[k] / 10;
+						// 取個位數來乘
+						number[k] %= 10;
+					}
+				}
+			} else {
+				// 相乘i是十位數時,要拆解成2格數做判斷十位數(拆成兩格來存)
+				int a = i % 10;
+				int b = i / 10;
+				char[] temp = new char[MAX];
+
+				for (int k = 0; k < MAX; k++)
+					temp[k] = (char) (number[k] * a);
+				// 相乘百位數的過程
+				for (int k = 0; k < MAX - 1; k++) {
+					if (temp[k] >= 10) {
+						temp[k + 1] += temp[k] / 10;
+						temp[k] %= 10;
+					}
+				}
+
+				for (int k = 0; k < MAX - 1; k++)
+					temp[k + 1] += number[k] * b;
+				for (int k = 0; k < MAX - 1; k++) {
+					if (temp[k] >= 10) {
+						temp[k + 1] += temp[k] / 10;
+						temp[k] %= 10;
+					}
+				}
+				//
+				// for (int k = 0; k < 254; k++) {
+				// temp[k] = number[k];
+				// }
+			}
+		}
+
+		for (int i = MAX - 1; i >= 0; i--)
+			System.out.println(Integer.valueOf((number[i])));
+		System.out.println("\n");
+
+	}
+}
+
+// public static void main(String args[]) {
+// char sumArray[] = new char[100];
+// int sum=1;
+//
+// for (int i = 1; i < 50; i++) {//判斷進位
+// for (int j = 0; j <100; j++) {// for迴圈進位式自動做,所以加continue時會自動執行進位式
+// sum*= i;
+// if(sum>){
+// sumArray[i]=sum/10;
+// sumArray[i++]=sum%10;
+//
+//
+// }
+// }
+// }
+// for(int i=1;i<100;i++){
+// System.out.println(sumArray[i]);
+// }
+//
+
+// int i = 1;
+// long test = 1;
+// while (i <= 50)
+// {//while迴圈進位式不會自動做,所以加continue時會不會自動執行進位式,因為i++是自己加上去的,i永遠==1無限迴圈
+// test = test * i;
+// i++;
+// }
+
+// System.out.println(sum);
+// }
+// }

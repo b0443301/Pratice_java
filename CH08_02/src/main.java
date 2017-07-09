@@ -6,6 +6,7 @@ public class main {
 		try {
 			String file3 = "C:\\Users\\user\\Desktop\\file3.txt";
 			FileWriter fw = new FileWriter(file3);
+			
 
 			for (int j = 0; j < 10; j++) {
 				int[] random = new int[6];

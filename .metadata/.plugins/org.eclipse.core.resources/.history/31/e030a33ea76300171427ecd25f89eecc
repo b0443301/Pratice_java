@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class main {
+	public static void main(String args[]) {
+
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("請輸入你要的星期第一個字");
+		String input = scanner.nextLine();
+		if (input.equals("M") || input.equals("m")) {
+			System.out.println("Monday");
+		} else if (input.equals("T") || input.equals("t")) {
+			System.out.println("請再次輸入你要的星期第二個字");
+			String inputSecond = scanner.nextLine();
+			// input = scanner.nextLine();看看區段input有沒有再被使用,沒有直接拿來用但是只有else
+			// if可以用,if不行因為if每個都會進去區段裡做判斷
+			if (inputSecond.equals("u")) {
+				System.out.println("Tuseday");
+			} else if (inputSecond.equals("h")) {
+				System.out.println("Thursday");
+			}
+		} else if (input.equals("W") || input.equals("w")) {
+			System.out.println("Wedesday");
+		} else if (input.equals("F") || input.equals("f")) {
+			System.out.println("Friday");
+		} else if (input.equals("S") || input.equals("s")) {
+			System.out.println("請再次輸入你要的星期第二個字");
+			String inputSecond = scanner.nextLine();
+			if (inputSecond.equals("u")) {
+				System.out.println("Sunday");
+			} else if (inputSecond.equals("a")) {
+				// String inputThird = scanner.nextLine();包在if裡面
+				// System.out.println("請再次輸入你要的星期第三個字");
+				System.out.println("Saturday");
+			}
+		}
+		scanner.close();
+	}
+}

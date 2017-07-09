@@ -29,6 +29,7 @@
 //
 //	}
 //}
+/* i代表a的對手,j代表b的對手,k代表c的對手*/
 public class main {
 	public static void main(String args[]) {
 		for (int i = 'x'; i <= 'z'; i++) {
@@ -37,9 +38,9 @@ public class main {
 					for (int k = 'x'; k <= 'z'; k++) {
 						if (i != k && j != k) {
 							if (i != 'x' && k != 'x' && k != 'z') {
-								System.out.println("a的對手是"+(char) i);
-								System.out.println("b的對手是"+(char) j);
-								System.out.println("c的對手是"+(char) k);
+								System.out.println("a的對手是" + (char) i);
+								System.out.println("b的對手是" + (char) j);
+								System.out.println("c的對手是" + (char) k);
 							}
 						}
 					}

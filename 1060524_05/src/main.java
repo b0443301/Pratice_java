@@ -11,8 +11,8 @@ public class main {
 		} else if (input.equals("T") || input.equals("t")) {
 			System.out.println("請再次輸入你要的星期第二個字");
 			String inputSecond = scanner.nextLine();
-			// input = scanner.nextLine();看看區段input有沒有再被使用,沒有直接拿來用但是只有else
-			// if可以用,if不行因為if每個都會進去區段裡做判斷
+			// input = scanner.nextLine();看看區段input有沒有再被使用,沒有直接拿來用但是只有else if可以用,
+			//if不行因為if每個都會進去區段裡做判斷
 			if (inputSecond.equals("u")) {
 				System.out.println("Tuseday");
 			} else if (inputSecond.equals("h")) {

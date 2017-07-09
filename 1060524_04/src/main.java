@@ -11,8 +11,8 @@ public class main {
 		int semester = 0;
 	}
 
-	// inner class 跟class隔開是因為減少main
-	// function再被new一次,減少空間浪費,以及把每個class的功能分開,EX:main負責計算
+	// inner class 跟class隔開是因為減少main function再被new一次,
+	//減少空間浪費,以及把每個class的功能分開,EX:main負責計算
 	public static void main(String args[]) {
 		Scanner scanner = new Scanner(System.in);
 
@@ -37,5 +37,6 @@ public class main {
 		for (int i = 0; i < 3; i++) {
 			System.out.println("學生學期成績" + semesterScore[i].semester);
 		}
+		scanner.close();
 	}
 }
